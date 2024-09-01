@@ -29,7 +29,7 @@ function getHumanChoice() {
 let userWin = 0;
 let compWin = 0;
 
-function playRound(getHumanChoice, getComputerChoice) {
+function playRound() {
 //If user wins
     if (userChoice == "Rock" && compChoice == "Scissors" || 
         userChoice == "Paper" && compChoice == "Rock" || 
