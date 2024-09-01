@@ -29,7 +29,7 @@ function getComputerChoice() {
         compChoice == "Scissors" && userChoice == "Rock") {
         console.log("Sorry, you lost!\nThe computer chose:", compChoice, "\nYou chose:", userChoice);
     }
-
+//If there is a tie
     else{
         console.log("Its a tie! You and the computer both chose", compChoice);
     }
