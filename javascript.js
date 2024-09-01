@@ -1,6 +1,10 @@
 function getComputerChoice() {
 
-    compNum = Math.floor(Math.random() * 2);
+    userRounds = 'y';
+
+    while (userRounds === 'y') {
+        
+        compNum = Math.floor(Math.random() * 2);
  //Assign # to computer choice string
     switch (compNum) {
         case 0:
@@ -33,9 +37,13 @@ function getComputerChoice() {
     else{
         console.log("Its a tie! You and the computer both chose", compChoice);
     }
+//How many times the game will run
+    userRounds = prompt("Would you like to play again? (y/n):");
 
-
+        
+    }
     
+    console.log("Thank you for playing!")
 }
 
 getComputerChoice();
